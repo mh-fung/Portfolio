@@ -84,7 +84,11 @@
 }
 
 .contact {
-  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
 }
 .contact__heading {
   font-family: Cormorant, sans-serif;
@@ -95,14 +99,21 @@
   border: 1px solid black;
   font-family: Inter, sans-serif;
   font-size: 18px;
+  text-align: center;
   width: 272px;
   height: 79px;
-  padding: 10px auto;
+  padding: 25px;
 }
 
 .footer {
   height: 100px;
   background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.footer__button {
+  padding: 10px;
 }
 
 @media screen and (min-width: 1440px) {
