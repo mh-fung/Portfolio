@@ -55,6 +55,56 @@
   display: none;
 }
 
+.projects__heading {
+  font-family: Cormorant, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+.projects__image {
+  height: 265px;
+  background-color: black;
+}
+.projects__title {
+  font-family: Cormorant, sans-serif;
+  font-size: 32px;
+}
+.projects__nav {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.projects__cards--4 {
+  display: none;
+}
+.projects__cards--5 {
+  display: none;
+}
+.projects__cards--6 {
+  display: none;
+}
+
+.contact {
+  background-color: gray;
+}
+.contact__heading {
+  font-family: Cormorant, sans-serif;
+  font-size: 80px;
+  text-align: center;
+}
+.contact__button {
+  border: 1px solid black;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  width: 272px;
+  height: 79px;
+  padding: 10px auto;
+}
+
+.footer {
+  height: 100px;
+  background-color: black;
+}
+
 @media screen and (min-width: 1440px) {
   .navigation__button {
     display: unset;
