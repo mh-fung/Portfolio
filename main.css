@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Inter&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -13,14 +14,52 @@
 .navigation__name {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: Cormorant, sans-serif;
 }
 .navigation__button {
   display: none;
 }
 
+.header {
+  width: 344px;
+  height: 542px;
+  top: 157px;
+  left: 23px;
+}
+.header__heading {
+  font-size: 80px;
+  font-family: Cormorant, sans-serif;
+  padding-bottom: 30px;
+}
+.header__description {
+  width: 308.64px;
+  font-family: Inter, sans-serif;
+}
+
+.intro {
+  padding-bottom: 30px;
+}
+.intro__heading {
+  font-family: Cormorant, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+.intro__description {
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+
+.skills {
+  display: none;
+}
+
 @media screen and (min-width: 1440px) {
   .navigation__button {
+    display: unset;
+  }
+  .skills {
     display: unset;
   }
 }/*# sourceMappingURL=main.css.map */
