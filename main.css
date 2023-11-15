@@ -1,1 +1,26 @@
-/*# sourceMappingURL=main.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.navigation__name {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.navigation__button {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .navigation__button {
+    display: unset;
+  }
+}/*# sourceMappingURL=main.css.map */
