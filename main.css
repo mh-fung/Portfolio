@@ -66,6 +66,7 @@
 .projects__title {
   font-family: Cormorant, sans-serif;
   font-size: 32px;
+  padding-right: 50px;
 }
 .projects__nav {
   padding: 5px;
