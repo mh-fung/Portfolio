@@ -88,15 +88,7 @@
 
     &__cards {
 
-        &--4 {
-            display: none;
-        }
-
-        &--5 {
-            display: none;
-        }
-
-        &--6 {
+        &--skipped {
             display: none;
         }
     }
@@ -235,6 +227,26 @@
             display: flex;
             justify-content: space-evenly;
             padding: 60px;
+        }
+
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__heading {
+            width: 100%;
+            font-size: 48px;
+        }
+
+        &__cards {
+            width: 30%;
+            padding: 10px;
+
+            &--skipped {
+                display: unset;
+            }
         }
 
     }

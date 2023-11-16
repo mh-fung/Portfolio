@@ -73,13 +73,7 @@
   display: flex;
   justify-content: space-between;
 }
-.projects__cards--4 {
-  display: none;
-}
-.projects__cards--5 {
-  display: none;
-}
-.projects__cards--6 {
+.projects__cards--skipped {
   display: none;
 }
 
@@ -194,5 +188,21 @@
     display: flex;
     justify-content: space-evenly;
     padding: 60px;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .projects__heading {
+    width: 100%;
+    font-size: 48px;
+  }
+  .projects__cards {
+    width: 30%;
+    padding: 10px;
+  }
+  .projects__cards--skipped {
+    display: unset;
   }
 }/*# sourceMappingURL=main.css.map */
