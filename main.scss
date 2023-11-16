@@ -31,6 +31,7 @@
 
     &__heading {
         font-size: 80px;
+        font-weight: 400;
         font-family: $font-title;
         padding-bottom: 30px;
     }
@@ -153,11 +154,29 @@
             font-size: 20px;
             font-weight: 400;
             font-family: $font-title;
-            
+
             &--about {
                 grid-column-start: 3;
             }
         }
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 40px;
+
+        &__heading {
+            align-self: center;
+            padding-bottom: 70px;
+            font-size: 128px;
+        }
+
+        &__description {
+            font-size: 20px;
+            padding: 0px 10px;
+            width: 45vw;
+        }
+        
     }
 
     .skills {
