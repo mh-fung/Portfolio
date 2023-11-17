@@ -1,6 +1,7 @@
 @use "./variables" as *;
 
 .projects {
+    padding: 20px 10px;
 
     &__heading {
         font-family: $font-title;
