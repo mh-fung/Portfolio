@@ -73,6 +73,9 @@
   display: flex;
   justify-content: space-between;
 }
+.projects__buttons {
+  display: none;
+}
 .projects__cards--skipped {
   display: none;
 }
@@ -197,6 +200,9 @@
   .projects__heading {
     width: 100%;
     font-size: 48px;
+  }
+  .projects__buttons {
+    display: flex;
   }
   .projects__cards {
     width: 30%;

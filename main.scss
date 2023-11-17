@@ -86,6 +86,10 @@
         justify-content: space-between;
     }
 
+    &__buttons {
+        display: none;
+    }
+
     &__cards {
 
         &--skipped {
@@ -238,6 +242,10 @@
         &__heading {
             width: 100%;
             font-size: 48px;
+        }
+
+        &__buttons {
+            display: flex;
         }
 
         &__cards {
