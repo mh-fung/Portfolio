@@ -124,6 +124,7 @@
 @media screen and (min-width: 1024px) {
   .skills {
     display: unset;
+    padding: 30px 10px;
   }
   .skills__text {
     display: flex;
@@ -132,17 +133,23 @@
     font-family: Cormorant, sans-serif;
     font-size: 48px;
     font-weight: 700;
+    padding: 10px;
   }
   .skills__text--description {
     font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 400;
+    padding: 10px;
     padding-left: 20vw;
   }
   .skills__icons {
     display: flex;
-    justify-content: space-evenly;
-    padding: 60px;
+    justify-content: space-between;
+    padding: 60px 20vw;
+  }
+  .skills__icon {
+    width: 50px;
+    height: 70px;
   }
 }
 .projects {
