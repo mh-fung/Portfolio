@@ -1,0 +1,66 @@
+@use "./variables" as *;
+
+.projects {
+
+    &__heading {
+        font-family: $font-title;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    &__image {
+        height: 265px;
+        background-color: black;
+    }
+
+    &__title {
+        font-family: $font-title;
+        font-size: 32px;
+        padding-right: 50px;
+    }
+
+    &__nav {
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__buttons {
+        display: none;
+    }
+
+    &__cards {
+
+        &--skipped {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width:$desktop-breakpoint) {
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__heading {
+            width: 100%;
+            font-size: 48px;
+        }
+
+        &__buttons {
+            display: flex;
+        }
+
+        &__cards {
+            width: 30%;
+            padding: 10px;
+
+            &--skipped {
+                display: unset;
+            }
+        }
+
+    }
+}

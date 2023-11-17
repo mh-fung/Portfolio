@@ -1,0 +1,13 @@
+@use "./variables" as *;
+
+.footer {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+    &__button {
+        padding: 10px;
+    }
+}

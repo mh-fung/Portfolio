@@ -1,0 +1,49 @@
+@use "./variables" as *;
+
+.intro {
+    padding-bottom: 30px;
+
+    &__heading {
+        font-family: $font-title;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    &__description {
+        font-family: $font-body;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:$desktop-breakpoint) {
+
+    .intro {
+        height: 45vh;
+        padding: 40px 0px;
+        display: grid;
+        grid-template-areas:
+            "heading img"
+            "description img";
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr 4fr;
+
+
+        &__heading {
+            font-size: 48px;
+            grid-area: heading;
+            padding: 20px 0px;
+        }
+
+        &__img {
+            grid-area: img;
+        }
+
+        &__description {
+            grid-area: description;
+            font-size: 18px;
+            padding: 20px 0;
+            width: 50vw;
+        }
+
+    }
+}

@@ -1,0 +1,35 @@
+@use "./variables" as *;
+
+.skills {
+    display: none;
+}
+
+@media screen and (min-width:$desktop-breakpoint) {
+
+    .skills {
+        display: unset;
+        
+        &__text {
+            display: flex;
+            &--heading {
+                font-family: $font-title;
+                font-size: 48px;
+                font-weight: 700;
+            }
+
+            &--description {
+                font-family: $font-body;
+                font-size: 16px;
+                font-weight: 400;
+                padding-left: 20vw;
+            }
+        }
+
+        &__icons {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 60px;
+        }
+
+    }
+}
