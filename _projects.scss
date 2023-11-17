@@ -17,7 +17,7 @@
     &__title {
         font-family: $font-title;
         font-size: 32px;
-        padding-right: 50px;
+        padding-right: 5vw;
     }
 
     &__nav {
@@ -30,7 +30,16 @@
         display: none;
     }
 
+    &__button {
+        padding: 0px 10px;
+        font-family: $font-body;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
     &__cards {
+
+        padding: 20px 0px;
 
         &--skipped {
             display: none;
@@ -48,8 +57,11 @@
         &__heading {
             width: 100%;
             font-size: 48px;
+            padding-bottom: 30px;
         }
-
+        &__title {
+            padding-right: 0px;
+        }
         &__buttons {
             display: flex;
         }

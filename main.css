@@ -150,7 +150,7 @@
 .projects__title {
   font-family: Cormorant, sans-serif;
   font-size: 32px;
-  padding-right: 50px;
+  padding-right: 5vw;
 }
 .projects__nav {
   padding: 5px;
@@ -159,6 +159,15 @@
 }
 .projects__buttons {
   display: none;
+}
+.projects__button {
+  padding: 0px 10px;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+}
+.projects__cards {
+  padding: 20px 0px;
 }
 .projects__cards--skipped {
   display: none;
@@ -173,6 +182,10 @@
   .projects__heading {
     width: 100%;
     font-size: 48px;
+    padding-bottom: 30px;
+  }
+  .projects__title {
+    padding-right: 0px;
   }
   .projects__buttons {
     display: flex;
