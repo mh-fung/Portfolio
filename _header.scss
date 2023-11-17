@@ -18,21 +18,21 @@
 }
 
 @media screen and (min-width:$desktop-breakpoint) {
-.header {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 10px;
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
 
-    &__heading {
-        align-self: center;
-        padding-bottom: 70px;
-        font-size: 90px;
-    }
+        &__heading {
+            padding-bottom: 70px;
+            font-size: 90px;
+            align-self: center;
+        }
 
-    &__description {
-        font-size: 20px;
-        padding: 0px 10px;
-        width: 45vw;
+        &__description {
+            font-size: 20px;
+            padding: 0px 5vw;
+            width: 60vw;
+        }
     }
-}
 }
