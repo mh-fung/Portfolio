@@ -29,9 +29,10 @@
         display: grid;
         grid-template-areas:
             "heading img"
-            "description img";
+            "description1 img"
+            "description2 img";
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 4fr;
+        grid-template-rows: 1fr 1fr 2fr;
 
 
         &__heading {
@@ -49,6 +50,14 @@
             font-size: 18px;
             padding: 20px 0;
             width: 50vw;
+
+            &--1 {
+                grid-area: description1;
+            }
+
+            &--2 {
+                grid-area: description2;
+            }
         }
 
     }

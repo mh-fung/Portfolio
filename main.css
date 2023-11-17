@@ -92,9 +92,9 @@
   .intro {
     padding: 40px 10px;
     display: grid;
-    grid-template-areas: "heading img" "description img";
+    grid-template-areas: "heading img" "description1 img" "description2 img";
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 2fr;
   }
   .intro__heading {
     font-size: 48px;
@@ -109,6 +109,12 @@
     font-size: 18px;
     padding: 20px 0;
     width: 50vw;
+  }
+  .intro__description--1 {
+    grid-area: description1;
+  }
+  .intro__description--2 {
+    grid-area: description2;
   }
 }
 .skills {
