@@ -12,6 +12,7 @@
         font-size: 24px;
         font-weight: 700;
         font-family: $font-title;
+        border-bottom: 3px solid $primary-color;
     }
 
     &__button {
@@ -33,14 +34,16 @@
         &__button {
             display: unset;
             text-decoration: none;
+            text-align: center;
             color: black;
             font-family: $font-body;
             width: 10vw;
+            padding: 5px;
+            border-bottom: 3px solid $primary-color;
 
             &--about {
                 grid-column-start: 3;
             }
         }
     }
-
 }

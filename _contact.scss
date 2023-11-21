@@ -12,10 +12,11 @@
         font-family: $font-title;
         font-size: 80px;
         text-align: center;
+        border-bottom: 3px dotted $primary-color;
     }
 
     &__button {
-        border: 1px solid black;
+        border: 3px solid $primary-color;
         font-family: $font-body;
         font-size: 18px;
         text-align: center;
@@ -37,7 +38,7 @@
             height: 7vh;
             font-size: 24px;
             font-weight: 500;
-            padding: 20px 10px;
+            padding: 18px 10px;
         }
     }
 }

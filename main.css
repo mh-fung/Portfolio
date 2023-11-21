@@ -11,6 +11,7 @@
   font-size: 24px;
   font-weight: 700;
   font-family: Cormorant, sans-serif;
+  border-bottom: 3px solid rgb(213, 191, 168);
 }
 .navigation__button {
   display: none;
@@ -29,9 +30,12 @@
   .navigation__button {
     display: unset;
     text-decoration: none;
+    text-align: center;
     color: black;
     font-family: Inter, sans-serif;
     width: 10vw;
+    padding: 5px;
+    border-bottom: 3px solid rgb(213, 191, 168);
   }
   .navigation__button--about {
     grid-column-start: 3;
@@ -161,10 +165,6 @@
   font-weight: 700;
   padding: 20px 10px 0px 10px;
 }
-.projects__image {
-  height: 265px;
-  background-color: black;
-}
 .projects__title {
   font-family: Cormorant, sans-serif;
   font-size: 32px;
@@ -200,7 +200,7 @@
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.5fr 3fr 3fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
     padding: 0px 50px;
   }
   .projects__heading {
@@ -236,9 +236,10 @@
   font-family: Cormorant, sans-serif;
   font-size: 80px;
   text-align: center;
+  border-bottom: 3px dotted rgb(213, 191, 168);
 }
 .contact__button {
-  border: 1px solid black;
+  border: 3px solid rgb(213, 191, 168);
   font-family: Inter, sans-serif;
   font-size: 18px;
   text-align: center;
@@ -256,12 +257,12 @@
     height: 7vh;
     font-size: 24px;
     font-weight: 500;
-    padding: 20px 10px;
+    padding: 18px 10px;
   }
 }
 .footer {
   height: 100px;
-  background-color: black;
+  background-color: rgb(213, 191, 168);
   display: flex;
   justify-content: center;
   padding: 30px;

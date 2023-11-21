@@ -10,11 +10,6 @@
         padding: 20px 10px 0px 10px;
     }
 
-    &__image {
-        height: 265px;
-        background-color: black;
-    }
-
     &__title {
         font-family: $font-title;
         font-size: 32px;
@@ -45,7 +40,6 @@
     }
 
     &__cards {
-
         padding: 20px 10px;
 
         &--skipped {
@@ -59,7 +53,7 @@
     .projects {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.5fr 3fr 3fr;
+        grid-template-rows: 0.5fr 2fr 2fr;
         padding: 0px 50px;
 
         &__heading {

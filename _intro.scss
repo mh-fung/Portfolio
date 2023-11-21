@@ -21,7 +21,6 @@
         line-height: 1.6;
         padding: 10px;
     }
-
 }
 
 @media screen and (min-width:$desktop-breakpoint) {
@@ -35,7 +34,6 @@
             "description2 img";
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-
 
         &__heading {
             font-size: 48px;
@@ -62,6 +60,5 @@
                 grid-area: description2;
             }
         }
-
     }
 }
