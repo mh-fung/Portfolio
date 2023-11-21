@@ -11,3 +11,12 @@
         padding: 5px;
     }
 }
+
+@media screen and (min-width:$desktop-breakpoint) {
+    .footer {
+        &__button {
+            padding: 5px;
+            height: 5vh;
+        }
+    }
+}

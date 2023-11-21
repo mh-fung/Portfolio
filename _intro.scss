@@ -27,31 +27,32 @@
 @media screen and (min-width:$desktop-breakpoint) {
 
     .intro {
-        padding: 40px 10px;
+        padding: 80px 10px;
         display: grid;
         grid-template-areas:
             "heading img"
             "description1 img"
             "description2 img";
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr 1fr;
 
 
         &__heading {
             font-size: 48px;
             grid-area: heading;
-            padding: 20px 0px;
+            padding: 30px 50px;
         }
 
         &__img {
             grid-area: img;
+            padding: 0px 10px;
         }
 
         &__description {
             grid-area: description;
             font-size: 18px;
-            padding: 20px 0;
-            width: 50vw;
+            padding: 10px 50px;
+            width: 60vw;
 
             &--1 {
                 grid-area: description1;
