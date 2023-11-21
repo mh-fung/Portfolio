@@ -236,7 +236,6 @@
   font-family: Cormorant, sans-serif;
   font-size: 80px;
   text-align: center;
-  border-bottom: 3px dotted rgb(213, 191, 168);
 }
 .contact__button {
   border: 3px solid rgb(213, 191, 168);
@@ -245,12 +244,13 @@
   text-align: center;
   width: 250px;
   height: 70px;
-  padding: 25px;
+  padding: 20px;
 }
 
 @media screen and (min-width: 1024px) {
   .contact__heading {
     font-size: 110px;
+    border-bottom: 3px dotted rgb(213, 191, 168);
   }
   .contact__button {
     width: 25vw;

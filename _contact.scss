@@ -12,7 +12,6 @@
         font-family: $font-title;
         font-size: 80px;
         text-align: center;
-        border-bottom: 3px dotted $primary-color;
     }
 
     &__button {
@@ -22,15 +21,15 @@
         text-align: center;
         width: 250px;
         height: 70px;
-        padding: 25px;
+        padding: 20px;
     }
 }
 
 @media screen and (min-width:$desktop-breakpoint) {
-
     .contact {
         &__heading {
             font-size: 110px;
+            border-bottom: 3px dotted $primary-color;
         }
 
         &__button {
