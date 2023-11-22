@@ -10,10 +10,10 @@
 
 <body>
     <nav class="navigation">
-        <a href="" class="navigation__name">HEI FUNG.</a>
-        <a href="" class="navigation__button navigation__button--about">About</a>
-        <a href="" class="navigation__button">Projects</a>
-        <a href="" class="navigation__button">Contact</a>
+        <a href="" class="navigation__name">HEI <span class="navigation__name--last">FUNG.</span></a>
+        <a href="#about" class="navigation__button navigation__button--about">About</a>
+        <a href="#projects" class="navigation__button">Projects</a>
+        <a href="#contact" class="navigation__button">Contact</a>
     </nav>
     <header class="header">
         <h1 class="header__heading">Junior Software Developer.</h1>
@@ -22,7 +22,7 @@
             Laboriosam quibusdam ipsum quo delectus enim a deserunt rerum sed id nam, quisquam ullam molestiae hic?</p>
     </header>
     <main>
-        <section class="intro">
+        <section class="intro" id="about">
             <header class="intro__heading">ABOUT.</header>
             <img class="intro__img" src="./images/IMG_2783.JPG">
             <p class="intro__description intro__description--1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, fuga voluptatem
@@ -55,7 +55,7 @@
                 <img src="./images/icons_SpringBoot.svg" alt="SpringBoot_icon" class="skills__icon">
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <header class="projects__heading">PROJECTS.</header>
             <div class="projects__cards">
                 <div class="projects__image">black</div>
@@ -130,7 +130,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <header class="contact__heading">Get in touch.</header>
             <a class="contact__button">CONTACT</a>
         </section>

@@ -13,6 +13,9 @@
   font-family: Cormorant, sans-serif;
   border-bottom: 3px solid rgb(213, 191, 168);
 }
+.navigation__name--last {
+  color: rgb(213, 191, 168);
+}
 .navigation__button {
   display: none;
 }
@@ -222,6 +225,11 @@
   }
   .projects__cards--skipped {
     display: unset;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .projects__title {
+    padding-right: 13vw;
   }
 }
 .contact {

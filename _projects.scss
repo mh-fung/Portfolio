@@ -82,3 +82,11 @@
         }
     }
 }
+
+@media screen and (min-width:$desktopLarge-breakpoint) {
+    .projects {
+        &__title {
+            padding-right: 13vw;
+        }
+    }
+}
