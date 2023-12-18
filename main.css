@@ -34,14 +34,19 @@
     display: unset;
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: #505739;
     font-family: Inter, sans-serif;
     width: 10vw;
     padding: 5px;
-    border-bottom: 3px solid rgb(213, 191, 168);
+    border-radius: 15px;
+    background: linear-gradient(to bottom, rgb(255, 229, 201) 5%, rgb(213, 191, 168) 100%);
   }
   .navigation__button--about {
     grid-column-start: 3;
+  }
+  .navigation__button:active {
+    position: relative;
+    top: 1px;
   }
 }
 .header {

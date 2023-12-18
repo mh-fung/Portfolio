@@ -39,15 +39,21 @@
             display: unset;
             text-decoration: none;
             text-align: center;
-            color: black;
+            color: $primary-color-dark;
             font-family: $font-body;
             width: 10vw;
             padding: 5px;
-            border-bottom: 3px solid $primary-color;
+            border-radius: 15px;
+            background:linear-gradient(to bottom, $primary-color-light  5%, $primary-color 100%);
 
             &--about {
                 grid-column-start: 3;
             }
+        }
+
+        &__button:active {
+            position: relative;
+            top: 1px;
         }
     }
 }
