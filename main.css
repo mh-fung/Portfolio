@@ -36,17 +36,19 @@
     text-align: center;
     color: #505739;
     font-family: Inter, sans-serif;
-    width: 10vw;
-    padding: 5px;
-    border-radius: 15px;
-    background: linear-gradient(to bottom, rgb(255, 229, 201) 5%, rgb(213, 191, 168) 100%);
+    font-size: 15px;
+    width: 8vw;
+    padding: 3px 5px;
+    margin: 0px 10px;
+    border-bottom: 2px solid rgb(213, 191, 168);
+    border-radius: 1px;
   }
   .navigation__button--about {
     grid-column-start: 3;
   }
   .navigation__button:active {
     position: relative;
-    top: 1px;
+    top: 4px;
   }
 }
 .header {
@@ -57,27 +59,69 @@
   font-weight: 400;
   font-family: Cormorant, sans-serif;
   padding: 30px 10px;
+  text-shadow: 5px 5px 10px rgb(213, 191, 168);
+}
+.header__heading--lineOne {
+  padding: 30px 10px 0px 10px;
+}
+.header__heading--lineTwo {
+  padding: 0px 10px 0px 10px;
+  border-bottom: 5px solid rgb(213, 191, 168);
+}
+.header .profilePicture {
+  display: none;
 }
 .header__description {
   width: 85vw;
-  font-family: Inter, sans-serif;
+  font-family: Cormorant, sans-serif;
   line-height: 1.6;
   padding: 30px 10px;
+  margin: 0px 7px;
+  border-left: 3px dotted rgb(213, 191, 168);
 }
 
 @media screen and (min-width: 1024px) {
   .header {
-    display: flex;
-    flex-direction: column;
-    padding: 30px 10px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.7fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    padding: 30px 10px 30px 100px;
+    background: linear-gradient(90deg, white 20%, rgb(213, 191, 168) 100%);
   }
   .header__heading {
-    padding-bottom: 70px;
+    padding-bottom: 20px;
     align-self: center;
+    width: 30vw;
+  }
+  .header__heading--lineOne {
+    grid-row-start: 1;
+  }
+  .header__heading--lineTwo {
+    margin-right: 30px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .header .profilePicture {
+    display: unset;
+    height: 40vh;
+    -webkit-clip-path: circle(35% at 50% 55%);
+            clip-path: circle(35% at 50% 55%);
+    filter: brightness(110%);
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
   .header__description {
-    padding: 0px 10vw;
-    width: 60vw;
+    width: 20vw;
+    height: 40vh;
+    padding-top: 80px;
+    font-size: 30px;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header__description {
+    padding-top: 170px;
   }
 }
 .intro {
@@ -88,6 +132,7 @@
   font-size: 32px;
   font-weight: 700;
   padding: 20px 10px;
+  text-shadow: 5px 5px 10px #505739;
 }
 .intro__img {
   width: 100%;
@@ -102,16 +147,17 @@
 
 @media screen and (min-width: 1024px) {
   .intro {
-    padding: 80px 10px;
+    padding: 60px 10px 80px 10px;
     display: grid;
     grid-template-areas: "heading img" "description1 img" "description2 img";
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.07fr;
+    grid-template-rows: 0.2fr 0.3fr 1fr;
   }
   .intro__heading {
     font-size: 48px;
     grid-area: heading;
     padding: 30px 50px;
+    width: 40vw;
   }
   .intro__img {
     grid-area: img;
@@ -121,7 +167,10 @@
     grid-area: description;
     font-size: 18px;
     padding: 10px 50px;
-    width: 60vw;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .intro__description--1 {
     grid-area: description1;
@@ -147,12 +196,14 @@
     font-size: 48px;
     font-weight: 700;
     padding: 60px;
+    text-shadow: 5px 5px 10px #505739;
   }
   .skills__text--description {
     font-family: Inter, sans-serif;
     font-size: 14px;
-    padding: 60px;
-    padding-right: 10px;
+    padding: 80px 200px 50px 120px;
+    border-top: 5px solid rgb(213, 191, 168);
+    border-right: 5px double rgb(213, 191, 168);
   }
   .skills__icons {
     display: flex;
@@ -164,6 +215,11 @@
     height: 70px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .skills__text--description {
+    padding-left: 240px;
+  }
+}
 .projects {
   padding: 20px 10px;
 }
@@ -172,21 +228,25 @@
   font-size: 32px;
   font-weight: 700;
   padding: 20px 10px 0px 10px;
+  text-shadow: 5px 5px 10px #505739;
 }
 .projects__title {
   font-family: Cormorant, sans-serif;
   font-size: 32px;
-  padding-right: 5vw;
 }
 .projects__image {
-  height: 35vh;
+  height: auto;
   width: 100%;
-  background-color: black;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .projects__nav {
   padding: 10px 0px;
   display: flex;
   justify-content: space-between;
+}
+.projects__link {
+  padding-right: 15px;
 }
 .projects__buttons {
   display: none;
@@ -198,7 +258,9 @@
   font-weight: 600;
 }
 .projects__cards {
-  padding: 20px 10px;
+  margin: 20px 10px;
+  border-bottom: 5px double rgb(213, 191, 168);
+  background: linear-gradient(180deg, white 60%, rgb(213, 191, 168) 100%);
 }
 .projects__cards--skipped {
   display: none;
@@ -222,6 +284,9 @@
   .projects__title {
     font-size: 25px;
   }
+  .projects__link {
+    padding: 0px 5px;
+  }
   .projects__buttons {
     display: flex;
   }
@@ -244,6 +309,9 @@
   align-items: center;
   height: 500px;
   padding: 30px;
+  background-color: white;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23f7f2ee' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23eee5dc' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23e6d9cb' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23ddccb9' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23D5BFA8' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
 }
 .contact__heading {
   font-family: Cormorant, sans-serif;
@@ -251,7 +319,7 @@
   text-align: center;
 }
 .contact__button {
-  border: 3px solid rgb(213, 191, 168);
+  border: 3px solid #505739;
   font-family: Inter, sans-serif;
   font-size: 18px;
   text-align: center;
@@ -263,14 +331,14 @@
 @media screen and (min-width: 1024px) {
   .contact__heading {
     font-size: 110px;
-    border-bottom: 3px dotted rgb(213, 191, 168);
+    border-bottom: 6px double #505739;
   }
   .contact__button {
     width: 25vw;
     height: 7vh;
     font-size: 24px;
     font-weight: 500;
-    padding: 10px;
+    padding: 15px;
   }
 }
 .footer {
@@ -278,7 +346,6 @@
   background-color: rgb(213, 191, 168);
   display: flex;
   justify-content: center;
-  padding: 30px;
 }
 .footer__button {
   padding: 5px;
@@ -286,12 +353,12 @@
 
 @media screen and (min-width: 1024px) {
   .footer__button {
-    padding: 5px;
-    height: 6vh;
+    padding: 20px 40px;
   }
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=main.css.map */

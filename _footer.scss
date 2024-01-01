@@ -5,7 +5,6 @@
     background-color: $primary-color;
     display: flex;
     justify-content: center;
-    padding: 30px;
 
     &__button {
         padding: 5px;
@@ -15,8 +14,7 @@
 @media screen and (min-width:$desktop-breakpoint) {
     .footer {
         &__button {
-            padding: 5px;
-            height: 6vh;
+            padding: 20px 40px;
         }
     }
 }

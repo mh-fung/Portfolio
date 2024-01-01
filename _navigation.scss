@@ -41,19 +41,21 @@
             text-align: center;
             color: $primary-color-dark;
             font-family: $font-body;
-            width: 10vw;
-            padding: 5px;
-            border-radius: 15px;
-            background:linear-gradient(to bottom, $primary-color-light  5%, $primary-color 100%);
-
+            font-size: 15px;
+            width: 8vw;
+            padding: 3px 5px;
+            margin: 0px 10px;
+            border-bottom: 2px solid $primary-color;
+            border-radius: 1px;
             &--about {
                 grid-column-start: 3;
             }
+
         }
 
         &__button:active {
             position: relative;
-            top: 1px;
+            top: 4px;
         }
     }
 }

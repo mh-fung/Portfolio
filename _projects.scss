@@ -8,24 +8,28 @@
         font-size: 32px;
         font-weight: 700;
         padding: 20px 10px 0px 10px;
+        text-shadow: 5px 5px 10px $primary-color-dark;
     }
 
     &__title {
         font-family: $font-title;
         font-size: 32px;
-        padding-right: 5vw;
     }
 
     &__image {
-        height: 35vh;
+        height: auto;
         width: 100%;
-        background-color: black;
+        object-fit: contain;
     }
 
     &__nav {
         padding: 10px 0px;
         display: flex;
         justify-content: space-between;
+    }
+
+    &__link {
+        padding-right: 15px;
     }
 
     &__buttons {
@@ -40,8 +44,9 @@
     }
 
     &__cards {
-        padding: 20px 10px;
-
+        margin: 20px 10px;
+        border-bottom: 5px double $primary-color;
+        background: linear-gradient(180deg, white 60%, $primary-color 100%);
         &--skipped {
             display: none;
         }
@@ -68,7 +73,9 @@
         &__title {
             font-size: 25px;
         }
-
+        &__link {
+            padding: 0px 5px;
+        }
         &__buttons {
             display: flex;
         }

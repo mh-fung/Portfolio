@@ -8,30 +8,80 @@
         font-weight: 400;
         font-family: $font-title;
         padding: 30px 10px;
+        text-shadow: 5px 5px 10px $primary-color;
+
+        &--lineOne {
+            padding: 30px 10px 0px 10px;
+
+        }
+
+        &--lineTwo {
+            padding: 0px 10px 0px 10px;
+            border-bottom: 5px solid $primary-color;
+        }
+        
+    }
+
+    .profilePicture {
+        display: none;
     }
 
     &__description {
         width: 85vw;
-        font-family: $font-body;
+        font-family: $font-title;
         line-height: 1.6;
         padding: 30px 10px;
+        margin: 0px 7px;
+        border-left: 3px dotted $primary-color;
     }
 }
 
 @media screen and (min-width:$desktop-breakpoint) {
     .header {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 10px;
+        display: grid;
+        grid-template-columns: 1.2fr 0.7fr 1fr;
+        grid-template-rows: 1.5fr 1fr;
+        padding: 30px 10px 30px 100px;
+        background: linear-gradient(90deg, white 20%, $primary-color 100%);
 
         &__heading {
-            padding-bottom: 70px;
+            padding-bottom: 20px;
             align-self: center;
+            width: 30vw;
+            &--lineOne {
+                grid-row-start: 1;
+            }
+            &--lineTwo {
+                margin-right: 30px;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+        }
+
+        .profilePicture {
+            display: unset;
+            height: 40vh;
+            clip-path: circle(35% at 50% 55%);
+            filter: brightness(110%);
+            grid-row-start: 1;
+            grid-row-end: 3;
         }
 
         &__description {
-            padding: 0px 10vw;
-            width: 60vw;
+            width: 20vw;
+            height: 40vh;
+            padding-top: 80px;
+            font-size: 30px;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    }
+}
+
+@media screen and (min-width:$desktopLarge-breakpoint) {
+    .header {
+        &__description {
+            padding-top: 170px;
         }
     }
 }

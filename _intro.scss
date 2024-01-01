@@ -8,6 +8,7 @@
         font-size: 32px;
         font-weight: 700;
         padding: 20px 10px;
+        text-shadow: 5px 5px 10px $primary-color-dark;
     }
 
     &__img {
@@ -25,19 +26,20 @@
 
 @media screen and (min-width:$desktop-breakpoint) {
     .intro {
-        padding: 80px 10px;
+        padding: 60px 10px 80px 10px;
         display: grid;
         grid-template-areas:
             "heading img"
             "description1 img"
             "description2 img";
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 0.07fr;
+        grid-template-rows: 0.2fr 0.3fr 1fr;
 
         &__heading {
             font-size: 48px;
             grid-area: heading;
             padding: 30px 50px;
+            width: 40vw;
         }
 
         &__img {
@@ -49,7 +51,8 @@
             grid-area: description;
             font-size: 18px;
             padding: 10px 50px;
-            width: 60vw;
+            width: fit-content;
+            height: fit-content;
 
             &--1 {
                 grid-area: description1;

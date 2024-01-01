@@ -16,13 +16,15 @@
                 font-size: 48px;
                 font-weight: 700;
                 padding: 60px;
+                text-shadow: 5px 5px 10px $primary-color-dark;
             }
 
             &--description {
                 font-family: $font-body;
                 font-size: 14px;
-                padding: 60px;
-                padding-right: 10px;
+                padding: 80px 200px 50px 120px;
+                border-top: 5px solid $primary-color;
+                border-right: 5px double $primary-color;
             }
         }
 
@@ -35,6 +37,16 @@
         &__icon {
             width: 50px;
             height: 70px;
+        }
+    }
+}
+
+@media screen and (min-width:$desktopLarge-breakpoint) {
+    .skills {
+        &__text {
+            &--description {
+                padding-left: 240px;
+            }
         }
     }
 }

@@ -1,146 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hei FUNG</title>
-    <link rel="stylesheet" href="main.css">
-</head>
+    <link rel="stylesheet" href="main.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="navigation">
-        <a href="" class="navigation__name">HEI <span class="navigation__name--last">FUNG.</span></a>
-        <a href="#about" class="navigation__button navigation__button--about">About</a>
-        <a href="#projects" class="navigation__button">Projects</a>
-        <a href="#contact" class="navigation__button">Contact</a>
+      <a href="" class="navigation__name"
+        >HEI <span class="navigation__name--last">FUNG.</span></a
+      >
+      <a href="#about" class="navigation__button navigation__button--about"
+        >About</a
+      >
+      <a href="#projects" class="navigation__button">Projects</a>
+      <a href="#contact" class="navigation__button">Contact</a>
     </nav>
     <header class="header">
-        <h1 class="header__heading">Junior Software Engineer.</h1>
-        <p class="header__description">Hey, I am Hei.</p>
-        <p class="header__description">Follow along to know more about this junior softare engineer based in UK.</p>
+      <h1 class="header__heading header__heading--lineOne">Hey,</h1>
+      <h1 class="header__heading header__heading--lineTwo">I am Hei.</h1>
+      <img
+        class="profilePicture"
+        src="./images/IMG_2916.JPG"
+        alt="Profile Picture"
+      />
+      <p class="header__description">A junior softare engineer based in UK.</p>
     </header>
     <main>
-        <section class="intro" id="about">
-            <header class="intro__heading">ABOUT.</header>
-            <img class="intro__img" src="./images/IMG_2783.JPG">
-            <p class="intro__description intro__description--1">My story begins in Hong Kong, a city on the other side
-                of the world. I obtained a bachelor's degree in Linguistics with a minor in Spanish (¡Hola! ¿Cómo
-                estás?). 
-            </p>
-            <p class="intro__description intro__description--2">I continued my studies with a MA in Forensic Phonetics at the University of York, where my
-                fascination with the tech industry was ignited. Utilising different softwares to automate data analysis
-                processes was incredibly intriguing, and I was eager to delve deeper. That's why I joined _nology,
-                driven by passion and excitement, to further my journey in the realm of software development and
-                technology.
-            </p>
-        </section>
-        <section class="skills">
-            <div class="skills__text">
-                <header class="skills__text--heading">SKILLS.</header>
-                <p class="skills__text--description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam,
-                    velit qui consequatur iste est hic,
-                    veniam distinctio magni libero, perferendis error. Perferendis omnis ratione nostrum nam temporibus
-                    illum ut vel.
-                </p>
-            </div>
-            <div class="skills__icons">
-                <img src="./images/icons_Git.svg" alt="Git_icon" class="skills__icon">
-                <img src="./images/icons_HTML5.svg" alt="HTML5_icon" class="skills__icon">
-                <img src="./images/icons_CSS3.svg" alt="CSS3_icon" class="skills__icon">
-                <img src="./images/icons_JavaScript.svg" alt="JavaScript_icon" class="skills__icon">
-                <img src="./images/icons_SCSS.svg" alt="SCSS_icon" class="skills__icon">
-                <img src="./images/icons_BEM.svg" alt="BEM_icon" class="skills__icon">
-                <img src="./images/icons_React.svg" alt="React_icon" class="skills__icon">
-                <img src="./images/icons_Java.svg" alt="Java_icon" class="skills__icon">
-                <img src="./images/icons_SpringBoot.svg" alt="SpringBoot_icon" class="skills__icon">
-            </div>
-        </section>
-        <section class="projects" id="projects">
-            <header class="projects__heading">PROJECTS.</header>
-            <div class="projects__cards">
-                <img class="projects__image" src="./images/calculatorProject.png">
-                <div class="projects__nav">
-                    <a class="projects__title">Calculator Project</a>
-                    <a href="https://mh-fung.github.io/Calculator/"><img src="./images/buttons_view.svg"></a>
-                    <a href="https://github.com/mh-fung/Calculator"><img src="./images/buttons_expand.svg"></a>
-                </div>
-                <div class="projects__buttons">
-                    <a class="projects__button">SCSS</a>
-                </div>
-            </div>
-            <div class="projects__cards">
-                <img class="projects__image" src="./images/tsGameProject.png">
-                <div class="projects__nav">
-                    <a class="projects__title">Language Learning Game</a>
-                    <a href="https://mh-fung.github.io/language-learning-game/"><img src="./images/buttons_view.svg"></a>
-                    <a href="https://github.com/mh-fung/language-learning-game"><img src="./images/buttons_expand.svg"></a>
-                </div>
-                <div class="projects__buttons">
-                    <a class="projects__button">TypeScript</a>
-                    <a class="projects__button">SCSS</a>
-                </div>
-            </div>
-            <div class="projects__cards">
-                <img class="projects__image" src="./images/ticketTracker.png">
-                <div class="projects__nav">
-                    <a class="projects__title">Ticket Tracker</a>
-                    <a href="https://mh-fung.github.io/ticket-tracker/"><img src="./images/buttons_view.svg"></a>
-                    <a href="https://github.com/mh-fung/ticket-tracker"><img src="./images/buttons_expand.svg"></a>
-                </div>
-                <div class="projects__buttons">
-                    <a class="projects__button">REACT</a>
-                    <a class="projects__button">SCSS</a>
-                </div>
-            </div>
-            <div class="projects__cards projects__cards--skipped">
-                <div class="projects__image">black</div>
-                <div class="projects__nav">
-                    <a class="projects__title">PROJECT 4</a>
-                    <img src="./images/buttons_view.svg">
-                    <img src="./images/buttons_expand.svg">
-                </div>
-                <div class="projects__buttons">
-                    <a class="projects__button">REACT</a>
-                    <a class="projects__button">SCSS</a>
-                </div>
-            </div>
-            <div class="projects__cards projects__cards--skipped">
-                <div class="projects__image">black</div>
-                <div class="projects__nav">
-                    <a class="projects__title">PROJECT 5</a>
-                    <img src="./images/buttons_view.svg">
-                    <img src="./images/buttons_expand.svg">
-                </div>
-                <div class="projects__buttons">
-                    <a class="projects__button">REACT</a>
-                    <a class="projects__button">SCSS</a>
-                </div>
-            </div>
-            <div class="projects__cards projects__cards--skipped">
-                <div class="projects__image">black</div>
-                <div class="projects__nav">
-                    <a class="projects__title">PROJECT 6</a>
-                    <img src="./images/buttons_view.svg">
-                    <img src="./images/buttons_expand.svg">
-                </div>
-                <div class="projects__buttons">
-                    <a class="projects__button">REACT</a>
-                    <a class="projects__button">SCSS</a>
-                </div>
-            </div>
-        </section>
-        <section class="contact" id="contact">
-            <header class="contact__heading">Get in touch.</header>
-            <a class="contact__button">CONTACT</a>
-        </section>
+      <section class="intro" id="about">
+        <header class="intro__heading">ABOUT.</header>
+        <img class="intro__img" src="./images/IMG_2783.JPG" />
+        <p class="intro__description intro__description--1">
+          My story begins in Hong Kong, a city on the other side of the world.
+          Before coming to the UK, I obtained a bachelor's degree in Linguistics
+          with a minor in Spanish. (¡Hola! ¿Cómo estás?)
+        </p>
+        <p class="intro__description intro__description--2">
+          I continued my studies with a MA in Forensic Phonetics at the
+          University of York, where my fascination with the tech industry was
+          ignited. Utilising different softwares to automate data analysis
+          processes was incredibly intriguing, and I was eager to delve deeper.
+          That's why I joined _nology, driven by passion and excitement, to
+          further my journey in the realm of software development and
+          technology.
+        </p>
+      </section>
+      <section class="skills">
+        <div class="skills__text">
+          <header class="skills__text--heading">SKILLS.</header>
+          <p class="skills__text--description">
+            These are some of the technical skills that I have acquired and
+            utilised in the projects.
+          </p>
+        </div>
+        <div class="skills__icons">
+          <img
+            src="./images/icons_Git.svg"
+            alt="Git_icon"
+            class="skills__icon"
+          />
+          <img
+            src="./images/icons_HTML5.svg"
+            alt="HTML5_icon"
+            class="skills__icon"
+          />
+          <img
+            src="./images/icons_CSS3.svg"
+            alt="CSS3_icon"
+            class="skills__icon"
+          />
+          <img
+            src="./images/icons_JavaScript.svg"
+            alt="JavaScript_icon"
+            class="skills__icon"
+          />
+          <img
+            src="./images/icons_SCSS.svg"
+            alt="SCSS_icon"
+            class="skills__icon"
+          />
+          <img
+            src="./images/icons_BEM.svg"
+            alt="BEM_icon"
+            class="skills__icon"
+          />
+          <img
+            src="./images/icons_React.svg"
+            alt="React_icon"
+            class="skills__icon"
+          />
+          <img
+            src="./images/icons_Java.svg"
+            alt="Java_icon"
+            class="skills__icon"
+          />
+          <img
+            src="./images/icons_SpringBoot.svg"
+            alt="SpringBoot_icon"
+            class="skills__icon"
+          />
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <header class="projects__heading">PROJECTS.</header>
+        <div class="projects__cards">
+          <img class="projects__image" src="./images/calculatorProject.png" />
+          <div class="projects__nav">
+            <a class="projects__title">Calculator Project</a>
+            <a
+              class="projects__link"
+              href="https://mh-fung.github.io/Calculator/"
+              ><img src="./images/buttons_view.svg"
+            /></a>
+            <a href="https://github.com/mh-fung/Calculator"
+              ><img src="./images/buttons_expand.svg"
+            /></a>
+          </div>
+          <div class="projects__buttons">
+            <a class="projects__button">TypeScript</a>
+            <a class="projects__button">SCSS</a>
+          </div>
+        </div>
+        <div class="projects__cards">
+          <img class="projects__image" src="./images/tsGameProject.png" />
+          <div class="projects__nav">
+            <a class="projects__title">Language Learning Game</a>
+            <a
+              class="projects__link"
+              href="https://mh-fung.github.io/language-learning-game/"
+              ><img src="./images/buttons_view.svg"
+            /></a>
+            <a href="https://github.com/mh-fung/language-learning-game"
+              ><img src="./images/buttons_expand.svg"
+            /></a>
+          </div>
+          <div class="projects__buttons">
+            <a class="projects__button">TypeScript</a>
+            <a class="projects__button">SCSS</a>
+          </div>
+        </div>
+        <div class="projects__cards">
+          <img class="projects__image" src="./images/ticketTracker.png" />
+          <div class="projects__nav">
+            <a class="projects__title">Ticket Tracker</a>
+            <a
+              class="projects__link"
+              href="https://mh-fung.github.io/ticket-tracker/"
+              ><img src="./images/buttons_view.svg"
+            /></a>
+            <a href="https://github.com/mh-fung/ticket-tracker"
+              ><img src="./images/buttons_expand.svg"
+            /></a>
+          </div>
+          <div class="projects__buttons">
+            <a class="projects__button">REACT</a>
+            <a class="projects__button">TypeScript</a>
+            <a class="projects__button">SCSS</a>
+          </div>
+        </div>
+        <div class="projects__cards projects__cards--skipped">
+          <div class="projects__image"></div>
+          <div class="projects__nav">
+            <a class="projects__title">PROJECT 4</a>
+            <img src="./images/buttons_view.svg" />
+            <img src="./images/buttons_expand.svg" />
+          </div>
+          <div class="projects__buttons">
+            <a class="projects__button">REACT</a>
+            <a class="projects__button">SCSS</a>
+          </div>
+        </div>
+        <div class="projects__cards projects__cards--skipped">
+          <div class="projects__image"></div>
+          <div class="projects__nav">
+            <a class="projects__title">PROJECT 5</a>
+            <img src="./images/buttons_view.svg" />
+            <img src="./images/buttons_expand.svg" />
+          </div>
+          <div class="projects__buttons">
+            <a class="projects__button">REACT</a>
+            <a class="projects__button">SCSS</a>
+          </div>
+        </div>
+        <div class="projects__cards projects__cards--skipped">
+          <div class="projects__image"></div>
+          <div class="projects__nav">
+            <a class="projects__title">PROJECT 6</a>
+            <img src="./images/buttons_view.svg" />
+            <img src="./images/buttons_expand.svg" />
+          </div>
+          <div class="projects__buttons">
+            <a class="projects__button">REACT</a>
+            <a class="projects__button">SCSS</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <header class="contact__heading">Get in touch.</header>
+      </section>
     </main>
     <footer class="footer">
-        <a href=""><img class="footer__button" src="./images/icons_LinkedIn.svg"></a>
-        <a href="https://github.com/mh-fung"><img class="footer__button" src="./images/icons_Github.svg"></a>
-        <a href=""><img class="footer__button" src="./images/icons_CV.svg"></a>
+      <a href="https://www.linkedin.com/in/hei-fung-599a17226/"
+        ><img class="footer__button" src="./images/icons_LinkedIn.svg"
+      /></a>
+      <a href="https://github.com/mh-fung"
+        ><img class="footer__button" src="./images/icons_Github.svg"
+      /></a>
+      <a
+        href="https://drive.google.com/file/d/1KFK_OkKdYBZexIUbPDP6GTGPo86b_dRD/view?usp=sharing"
+        ><img class="footer__button" src="./images/icons_CV.svg"
+      /></a>
     </footer>
-
-</body>
-
+  </body>
 </html>
